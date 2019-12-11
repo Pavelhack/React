@@ -1,10 +1,41 @@
-.MyComponentFrame
+.IsShopFrame
 {
+  display: flex;
+  flex-direction: column;
   border: double gray 3px;
+  width: 500px;
+  margin: 30px auto;
   padding: 3px 7px;
   background-color: #F0F0F0;
 }
+h1{
+  text-align: center;
+}
 
+.ItemDiv{
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 5px;
+}
+
+.Item{
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  border: solid 2px red;
+  margin-left: 5px ;
+  text-align: center;
+ } 
+
+ .ItemDiv:first-child {
+  margin-left : none;
+ }
+
+.photo{
+  display: flex;
+  border: solid 2px green;
+  height: 100px;
+}
 .MyComponentText
 {
   font-style: italic;

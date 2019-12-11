@@ -14,9 +14,12 @@
   <link rel="stylesheet" type="text/css" href="index.css" />
 
   <script>
-
+    itemArr = [{name:"dron",model:"Z1",cost:"100$"},
+    {name:"dron",model:"x5",cost:"250$"},
+    {name:"camera",model:"Nicon",cost:"40$"},
+    {name:"bike",model:"Yamaha",cost:"12450$"}]
     ReactDOM.render(
-      React.createElement(IsShop), 
+      React.createElement(IsShop,{item:itemArr,}), 
       document.getElementById('container') 
     );
 
